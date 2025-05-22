@@ -5,7 +5,7 @@ global:
     root: INFO
      eureka:
   instance:
-    prefer-ip-address: true
+    prefer-Ip-Address: true
   client:
     fetch-registry: true
     register-with-eureka: true
@@ -20,6 +20,7 @@ global:
     endpoint:
        health:
         show-details: always
+
 
 
 
