@@ -3,7 +3,7 @@ spring:
    name: order-service
  datasource:
    url: mysql://localhost:3306/order_master
-   driverClassName: com.mysql.jdbc.Driver
+   driverClassName: com.mysql.cj.jdbc.Driver
 jpa:
 hibernate:
   ddl-auto: none
