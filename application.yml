@@ -3,10 +3,15 @@ global:
  logging:
    level:
     root: INFO
-    eureka:
-     client:
-       service-url:
-         defaultZone: http://localhost:8761/eureka
+     eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    
  management: 
     endpoints:
      web:
@@ -17,11 +22,4 @@ global:
         show-details: always
 
 
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka
+
